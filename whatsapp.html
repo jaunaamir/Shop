@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Chat Button</title>
+    <h2>For Chat Click On Green Button Below</h2>
+    <style>
+        @font-face {
+            font-family: 'Jameel Noori Nastaleeq';
+            src: url('path/to/JameelNooriNastaleeq.ttf') format('truetype');
+        }
+
+        body {
+            font-family: 'Jameel Noori Nastaleeq', Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            direction: rtl;
+            text-align: right;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .whatsapp-button {
+            width: 60px;
+            height: 60px;
+            background-color: #25d366;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .whatsapp-button img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="whatsapp-button" onclick="openWhatsApp()">
+        <mg src=""whatsappimg.png"" alt="WhatsApp Chat">
+    </div>
+
+    <script>
+        function openWhatsApp() {
+            var phoneNumber = '+923125136107'; // Replace with your WhatsApp number
+            var message = 'Hello, I need some help'; // Default message
+            var whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+    
+    </body>
+
+</html>
