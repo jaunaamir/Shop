@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product List</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" target="_blank">Add Product</a>
+        <a href="product-list.html" target="_blank">Product List</a>
+        <a href="admin-product.html" target="_blank">Admin Product Page</a>
+    </div>
+    <div class="container">
+        <div class="product-list">
+            <h2>Product List</h2>
+            <input type="text" id="search-box" class="search-box" placeholder="Search by product name or code" oninput="searchProducts()">
+            <button onclick="deleteAllProducts(prompt('Enter confirm key:'))">Delete All Products</button>
+            <div id="product-list-container" class="product-grid"></div>
+        </div>
+    </div>
+    <script src="product-list.js"></script>
+    <button class="chat-button" onclick="chatWithUs()">Chat with Us</button>
+</body>
+</html>

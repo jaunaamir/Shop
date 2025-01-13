@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Product Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" target="_blank">Add Product</a>
+        <a href="product-list.html" target="_blank">Product List</a>
+        <a href="admin-product.html" target="_blank">Admin Product Page</a>
+    </div>
+    <div class="container">
+        <div class="admin-product-list">
+            <h2>Admin Product Page</h2>
+            <input type="password" id="admin-password" placeholder="Enter Admin Password" oninput="checkPassword()">
+            <div id="admin-page-container" style="display: none;">
+                <input type="text" id="admin-search-box" class="search-box" placeholder="Search by product name or code" oninput="searchAdminProducts()">
+                <button onclick="deleteAllProducts(prompt('Enter confirm key:'))">Delete All Products</button>
+                <div id="admin-product-list-container" class="product-grid"></div>
+            </div>
+        </div>
+    </div>
+    <script src="admin-product.js"></script>
+    <button class="chat-button" onclick="chatWithUs()">Chat with Us</button>
+</body>
+</html>

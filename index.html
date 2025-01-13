@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Management</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" target="_blank">Add Product</a>
+        <a href="product-list.html" target="_blank">Product List</a>
+        <a href="admin-product.html" target="_blank">Admin Product Page</a>
+    </div>
+    <div class="container">
+        <div class="form-container">
+            <h2>Add Product</h2>
+            <div class="form-group">
+                <label>Product Image:</label>
+                <input type="file" id="product-image" accept="image/*" capture="environment">
+            </div>
+            <div class="form-group">
+                <label>Product Code:</label>
+                <input type="text" id="product-code">
+            </div>
+            <div class="form-group">
+                <label>Product Name:</label>
+                <input type="text" id="product-name">
+            </div>
+            <div class="form-group">
+                <label>Product Price:</label>
+                <input type="number" id="product-price">
+            </div>
+            <div class="form-group">
+                <label>Shopkeeper Name:</label>
+                <input type="text" id="shopkeeper-name">
+            </div>
+            <div class="form-group">
+                <label>Shopkeeper WhatsApp:</label>
+                <input type="text" id="shopkeeper-whatsapp">
+            </div>
+            <button onclick="addProduct()">Add Product</button>
+        </div>
+    </div>
+    <button class="chat-button" onclick="chatWithUs()">Chat with Us</button>
+    <script src="scripts.js"></script>
+</body>
+</html>
